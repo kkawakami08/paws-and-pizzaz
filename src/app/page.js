@@ -4,6 +4,7 @@
 //   return res.json();
 // };
 import Hero from "@/components/Hero";
+import HomePageProducts from "@/components/HomePageProducts";
 
 export default async function Home() {
   // const { products } = await getProducts();
@@ -11,6 +12,7 @@ export default async function Home() {
   return (
     <main className="h-screen">
       <Hero />
+      <HomePageProducts />
     </main>
   );
 }
