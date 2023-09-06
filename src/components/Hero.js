@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="bg-[url('/assets/images/home-pg.png')] bg-cover  bg-center flex flex-col gap-8  bg-no-repeat h-3/4 items-start justify-end px-5 py-5">
+    <div className="bg-[url('/assets/images/home-pg.png')] bg-cover  bg-center flex flex-col gap-8   items-start justify-end px-5 h-3/4 py-5 pt-48">
       <button className="bg-gray-blue text-jet-gray text-sm py-3 px-5 tracking-widest">
         SHOP NOW
       </button>

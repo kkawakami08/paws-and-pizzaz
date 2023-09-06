@@ -5,14 +5,19 @@
 // };
 import Hero from "@/components/Hero";
 import HomePageProducts from "@/components/HomePageProducts";
+import Testimonials from "@/components/Testimonials";
+import Postcard from "@/components/Postcard";
 
 export default async function Home() {
   // const { products } = await getProducts();
 
   return (
-    <main className="h-screen">
+    <main className="h-screen flex flex-col gap-10">
       <Hero />
       <HomePageProducts />
+      <hr className="" />
+      <Testimonials />
+      <Postcard />
     </main>
   );
 }
