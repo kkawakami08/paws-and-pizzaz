@@ -13,13 +13,13 @@ export default function Home() {
   // const { products } = await getProducts();
 
   return (
-    <main className="h-screen flex flex-col gap-10">
+    <div className="h-full flex flex-col gap-10">
       <Hero />
       <HomePageProducts />
       <hr className="" />
       <Testimonials />
       <Postcard />
       <StoreQualityPoints />
-    </main>
+    </div>
   );
 }
