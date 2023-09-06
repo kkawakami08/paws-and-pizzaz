@@ -7,8 +7,9 @@ import Hero from "@/components/Hero";
 import HomePageProducts from "@/components/HomePageProducts";
 import Testimonials from "@/components/Testimonials";
 import Postcard from "@/components/Postcard";
+import StoreQualityPoints from "@/components/StoreQualityPoints";
 
-export default async function Home() {
+export default function Home() {
   // const { products } = await getProducts();
 
   return (
@@ -18,6 +19,7 @@ export default async function Home() {
       <hr className="" />
       <Testimonials />
       <Postcard />
+      <StoreQualityPoints />
     </main>
   );
 }
