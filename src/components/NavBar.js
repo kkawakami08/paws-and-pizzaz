@@ -1,15 +1,33 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
 import { HiMiniShoppingBag } from "react-icons/hi2";
 import { ImMenu } from "react-icons/im";
+import Link from "next/link";
+import MenuDropdown from "./MenuDropdown";
 
 const NavBar = () => {
+  const [menuToggle, setMenuToggle] = useState(false);
+
+  const closeDropdown = () => {
+    setMenuToggle(false);
+  };
+
   return (
-    <nav className="flex absolute items-center text-white w-full p-5 justify-between z-10">
-      <p className="font-bold tracking-wider">Paws & Pizzaz</p>
-      <div className="flex text-2xl gap-5">
-        <HiMiniShoppingBag />
-        <ImMenu />
+    <nav className="flex flex-col absolute text-white    z-10">
+      <div className="flex  justify-between items-center w-screen p-4">
+        <Link href="/" onClick={closeDropdown}>
+          <p className="font-bold tracking-wider text-lg">Paws & Pizzaz</p>
+        </Link>
+        <div className="flex text-2xl gap-5">
+          <HiMiniShoppingBag />
+          <ImMenu
+            className="hover:cursor-pointer"
+            onClick={() => setMenuToggle((prev) => !prev)}
+          />
+        </div>
       </div>
+      {menuToggle && <MenuDropdown closeDropdown={closeDropdown} />}
     </nav>
   );
 };
