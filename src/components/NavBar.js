@@ -16,7 +16,7 @@ const NavBar = () => {
   return (
     <nav className="flex flex-col absolute text-white    z-10">
       <div className="flex  justify-between items-center w-screen p-4">
-        <Link href="/" onClick={closeDropdown}>
+        <Link href="/">
           <p className="font-bold tracking-wider text-lg">Paws & Pizzaz</p>
         </Link>
         <div className="flex text-2xl gap-5">

@@ -5,7 +5,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 
 const SocialMedia = () => {
   return (
-    <div className=" flex flex-col items-center gap-5 border-b-2 pb-16 border-light-purple  ">
+    <div className=" flex flex-col items-center gap-5 py-10  ">
       <p className="font-semibold tracking-wide">Follow Us:</p>
       <div className="flex gap-3">
         <div className="w-8 h-8 bg-gray-blue flex items-center justify-center rounded-full text-jet-gray">

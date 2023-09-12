@@ -3,7 +3,7 @@ import { BiSolidLockAlt } from "react-icons/bi";
 
 const StoreQualityPointTile = () => {
   return (
-    <div className="flex flex-col items-center gap-3 border-b-2 pb-10 border-gray-blue">
+    <div className="flex flex-col items-center gap-3 py-10 ">
       <div
         className="bg-light-purple w-8 h-8 rounded-full
        text-white flex items-center justify-center"

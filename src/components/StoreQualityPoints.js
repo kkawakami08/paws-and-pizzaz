@@ -3,7 +3,7 @@ import StoreQualityPointTile from "./StoreQualityPointTile";
 
 const StoreQualityPoints = () => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col  divide-y">
       <StoreQualityPointTile />
       <StoreQualityPointTile />
       <StoreQualityPointTile />
