@@ -10,7 +10,7 @@ const ProductTile = () => {
         height={450}
         alt="backpack"
       />
-      <p className="text-ash-gray">Accessory</p>
+      <p className="text-jet-gray">Accessory</p>
       <p className="font-medium">AdventureTrek Dog Backpack</p>
       <p className="">$20</p>
     </div>
